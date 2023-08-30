@@ -2,14 +2,30 @@
 
 ## Objectives
     - HouseKeeping
-    - Mern
+    - Javascript
 
 ## Begining of class
     - last week/lecture recap
+    - Make sure to let me know asap if you don't have access to our Discord/Calendar
 
 ## End of class
     - Reading
     - Assignments Due
     - Discussion question
-## Mern
-    - 
+
+## Javascript
+    - Variables & data types
+        - What is a variable?
+    - Arrays
+    - objects
+    - Functions
+    - Loops
+    - Conditional
+    - Different types of variables
+    - scope
+    - Arrow functions
+    - destructuring
+    - Spread Operator 
+
+## Work together
+    - first problem on our first assignment
