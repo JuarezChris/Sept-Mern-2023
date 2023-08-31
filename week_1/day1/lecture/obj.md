@@ -1,4 +1,4 @@
-<Welcome to week 1 of Mern!!!>
+<Welcome to week 1 day 1 of Mern!!!>
 
 ## Objectives
     - HouseKeeping
