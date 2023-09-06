@@ -2,7 +2,7 @@
 
 ## Objectives
     - HouseKeeping
-    - Mern
+    - State & useState Hook
 
 ## Begining of class
     - last week/lecture recap
@@ -11,3 +11,10 @@
     - Reading
     - Assignments Due
     - Discussion question
+
+## State & useState Hook
+    - Platform
+        - synthetic events
+        - hooks
+        - useState
+    - Demo
