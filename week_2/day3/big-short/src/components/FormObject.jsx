@@ -7,10 +7,13 @@ function FormObject() {
         offer: 0
     })
     const [housePurchases, setHousePurchases] = useState([])
+
     const [error, setError] = useState('')
 
     const handleVals = (e) => {
-        console.log(e.target.name, e.target.value)
+        // console.log(e.target.name, e.target.value)
+
+        // ...application creates a copy of our application state so we don't lose any prior onChange 
         setApplication({...application, [e.target.name]: e.target.value})
     }
 
@@ -39,7 +42,7 @@ function FormObject() {
                 error ? <p>{error}</p> : null
             }
             <label>Home:</label>
-            <input type="text" value={application.homeName} name="homeName" onChange={handleVals}/>
+            <input type="text" value={application.homeName} name="homeNames" onChange={handleVals}/>
             {
                 application.homeName.length < 3 && application.homeName.length > 0
                 ? <p>Home name needs to be longer than 3 characters</p> : null
@@ -55,6 +58,7 @@ function FormObject() {
         {/* line 36 was added at the very end of lecture after our end of class stuf */}
         {/* <p>HomeName: {application.homeName}</p> */}
         {/* This show real time updates  */}
+
         {
             housePurchases.map((housePurch, idx) => (
                     <div key={idx}>

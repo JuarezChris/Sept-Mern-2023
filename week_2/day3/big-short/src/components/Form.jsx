@@ -17,7 +17,13 @@ function Form() {
 
     const buyHome = (e) => {
         e.preventDefault()
-        const application = {homeName, offer}
+
+        const application = 
+        {
+            homeName: homeName,
+            offer: offer
+        }
+
          console.log(application)
          setHomeName('')
          setOffer(0)
@@ -28,7 +34,7 @@ function Form() {
         <h1>Buy a home!</h1>
         <form onSubmit={buyHome}>
             <label>Home:</label>
-            <input type="text" value={homeName} onChange={handleHomeName}/>
+            <input type="text" value={homeName} onChange={(e) => setHomeName(e.target.value)}/>
             <label>offer:</label>
             <input type="number" value={offer} onChange={handleOffer}/>
             <button>Submit</button>
