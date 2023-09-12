@@ -42,7 +42,7 @@ function FormObject() {
                 error ? <p>{error}</p> : null
             }
             <label>Home:</label>
-            <input type="text" value={application.homeName} name="homeNames" onChange={handleVals}/>
+            <input type="text" value={application.homeName} name="homeName" onChange={handleVals}/>
             {
                 application.homeName.length < 3 && application.homeName.length > 0
                 ? <p>Home name needs to be longer than 3 characters</p> : null
@@ -67,6 +67,7 @@ function FormObject() {
                     </div>
             ))
         }
+        
     </div>
   )
 }
