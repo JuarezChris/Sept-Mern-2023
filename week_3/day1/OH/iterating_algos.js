@@ -1,12 +1,11 @@
 const nums = [23,56,19,20,9,20,78,55,32,42,8,20,80]
 
 // ? Given the array above use the map method to return a new array of all the numbers multiplied by 2
-// const multipliedNums = nums.map((num) => num*2)
-// console.log(multipliedNums);
+
 
 // ? Given the array above use the filter method to return a new array of only numbers larger than 50
-// const over50 = nums.filter((num) => num > 50)
-// console.log(over50);
+
+
 // ? Given the array above use the filter method to return a new array of only numbers divisible by 3
 
 
