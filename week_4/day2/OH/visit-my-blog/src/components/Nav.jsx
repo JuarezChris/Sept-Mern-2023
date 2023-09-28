@@ -11,6 +11,9 @@ function Nav() {
         <div>
             <Link to={"/bart"}>Bart</Link>
         </div>
+        <div>
+            <Link to={"/santalittlehelper"}>Santas little helper</Link>
+        </div>
     </div>
   )
 }
