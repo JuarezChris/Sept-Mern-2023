@@ -6,8 +6,10 @@ import Nav from './components/Nav'
 import Doggie from './components/Doggie'
 
 function App() {
-  const [blogPost, setBlogPost] = useState('')
-  // create a state set to and object to save all posts for bart and santas little helper
+  const [blogPost, setBlogPost] = useState({
+    bart: [],
+    doggie: []
+  })
   return (
     <>
       <BrowserRouter>
