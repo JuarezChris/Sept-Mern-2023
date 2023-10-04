@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import axios from 'axios'
+import { Link } from 'react-router-dom'
 // essentials 
 // lifting state
 // Forms
@@ -34,6 +35,7 @@ const DisplayAll = () => {
                     {
                         house.sold ? <p>Sold!!</p> : <p>For sale!!</p>
                     }
+                    <Link to={`/oneHouse/${house._id}`}>Details</Link>
                 </div>
             ))
         }

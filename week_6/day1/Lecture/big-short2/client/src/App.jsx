@@ -4,6 +4,7 @@ import './App.css'
 import DisplayAll from './components/DisplayAll'
 import Nav from './components/Nav'
 import Form from './components/Form'
+import SingleHouse from './components/SingleHouse'
 
 function App() {
   
@@ -19,6 +20,7 @@ function App() {
         <Routes>
           <Route index element={ <DisplayAll/> } />
           <Route path="/sellHouse" element={ <Form/> } />
+          <Route path="/oneHouse/:id" element={ <SingleHouse/> } />
         </Routes>
       </BrowserRouter>
     </>
