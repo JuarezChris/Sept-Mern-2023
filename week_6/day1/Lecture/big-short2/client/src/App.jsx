@@ -2,6 +2,8 @@ import { useState } from 'react'
 import { BrowserRouter, Routes, Route} from 'react-router-dom'
 import './App.css'
 import DisplayAll from './components/DisplayAll'
+import Nav from './components/Nav'
+import Form from './components/Form'
 
 function App() {
   
@@ -12,10 +14,11 @@ function App() {
 
   return (
     <>
-      <h1>Buy a house!</h1>
       <BrowserRouter>
+        <Nav/>
         <Routes>
           <Route index element={ <DisplayAll/> } />
+          <Route path="/sellHouse" element={ <Form/> } />
         </Routes>
       </BrowserRouter>
     </>

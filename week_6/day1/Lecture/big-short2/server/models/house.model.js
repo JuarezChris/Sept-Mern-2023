@@ -13,12 +13,9 @@ const HouseSchema = new mongoose.Schema({
     },
     offer: {
         type: Number,
-        required: [true, "Offer is required"],
-        min: [5, "Price must be more than 4 dollars"]
     },
     sold: {
         type: Boolean,
-        required: [true, "Sold is required"],
     }
 }, {timestamps: true})
 
