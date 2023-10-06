@@ -35,7 +35,7 @@ const Update = () => {
         axios.patch(`http://localhost:8000/api/updateHouse/${id}`, house)
             .then(res => {
                 console.log(res)
-                navigate("/")
+                navigate(`/oneHouse/${id}`)
             })
             .catch(err => {
                 console.log(err)
