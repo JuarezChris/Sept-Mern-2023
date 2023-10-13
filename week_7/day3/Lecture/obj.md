@@ -1,4 +1,4 @@
-<Welcome to Mern wk7 d2!>
+<Welcome to Mern wk7 d3!>
 
 ## Objectives
     - begining of class tasks
