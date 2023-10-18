@@ -3,6 +3,7 @@ import axios from 'axios'
 import { Link, useNavigate } from 'react-router-dom';
 
 const HomePage = (props) => {
+    const {mainUser, setMainUser} = props;
     const navigate = useNavigate()
 
 
@@ -18,7 +19,7 @@ const HomePage = (props) => {
 
   return (
     <div>
-        <h1 className='text-center'>You Logged in!</h1>
+        <h1 className='text-center'>{mainUser.firstName} Logged in!</h1>
         <button onClick={logoutUser}>Logout</button>
     </div>
   )

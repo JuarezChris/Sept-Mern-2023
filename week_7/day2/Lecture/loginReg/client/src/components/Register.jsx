@@ -4,6 +4,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import { useState } from 'react';
 
 const Register = (props) => {
+    const {mainUser, setMainUser} = props;
     const navigate = useNavigate()
     const [user, setUser] = useState({
         firstName:'',
@@ -22,7 +23,8 @@ const Register = (props) => {
         e.preventDefault()
         axios.post('http://localhost:8000/api/registerUser', user, {withCredentials:true})
             .then((res) => {
-                console.log(res)
+                setMainUser(res.data)
+                console.log(res.data);
                 navigate('/homepage')
             })
             .catch((err) => {
